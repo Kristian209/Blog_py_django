@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>{%block title %}HOME{% endblock %} | Surfer Developer</title>
+    <style>
+    .bg-light {
+        margin-bottom: 20px;
+        background-color: #c8e3ff!important
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 220;
+    }
+    .main-container {
+    min-height: 800px;
+    }
+    .footer {
+      font-size: 10px;
+    }
+    </style>
+  </head>
+  <body>
+    {%include 'navbar.html'%}
+    <div class="container main-container">
+{%block content %}{% endblock %}
+    </div>
+    <footer class="footer text-center">
+      Surfer Developer.......Website made by: Kristian Estrada
+    </footer>
+    {%include "javascript.html"%}
+  </body>
+</html>

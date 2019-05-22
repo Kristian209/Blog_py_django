@@ -1,0 +1,17 @@
+    <div class="card">
+      <div class="card-body">
+        {%if obj.image%}
+        <a href="{{obj.get_absolute_url}}">
+        <img src="{{obj.image}}" class="card-img-top img-fluid" alt="surf">
+      </a>
+        {%endif%}
+        <h1 class="card-title">{{obj.title}}</h1>
+        <p class="user-text">by: {{obj.user}}</p>
+        {%if not detail%}
+        <p class="card-text">{{obj.content|truncatewords:15|linebreaks}}</p>
+        <a href="{{obj.get_absolute_url}}">View</a>
+        {%else%}
+        <p class="card-text">{{obj.content|linebreaks}}</p>
+        {%endif%}
+      </div>
+    </div>
